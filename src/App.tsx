@@ -1,14 +1,17 @@
+//Theme handling
 import { ThemeProvider } from "styled-components"
 import GlobalStyle from "./styles/global"
-
 import light from "./styles/themes/light"
 import dark from "./styles/themes/dark"
-import useStorage from "./utils/useStorage"
+import useTheme from "./utils/useTheme"
 
-import { DefaultTheme } from "styled-components/dist/types"
+// Sections
+import Navbar from "./components/Navbar"
+import Home from "./Sections/Home"
+import Skills from "./Sections/Skills"
 
 function App() {
-  const [theme, setTheme] = useStorage<DefaultTheme>("theme", light)
+  const [theme, setTheme] = useTheme(light)
 
   const toggleTheme = () => {
     setTheme(theme.title === "light" ? dark : light)
@@ -17,7 +20,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <button onClick={toggleTheme}>Carlos</button>
+      <Navbar toggleTheme={toggleTheme} />
+      <Home />
+      <Skills />
     </ThemeProvider>
   )
 }
