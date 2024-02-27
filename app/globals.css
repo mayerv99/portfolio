@@ -71,7 +71,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
-    background-color: #020617;
+    @apply bg-background text-foreground text-slate-300 bg-slate-950;
   }
 }
