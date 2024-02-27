@@ -1,7 +1,22 @@
 import { LampContainer } from "@/components/ui/lamp";
+import { TypewriterEffectSmooth } from "@/components/ui/typewritter";
 import { motion } from "framer-motion";
 
 export function HeroSection() {
+  const words = [
+    { text: "Ready" },
+    { text: "to" },
+    { text: "elevate" },
+    { text: "your" },
+    { text: "tech" },
+    { text: "game?" },
+    { text: "Let's" },
+    { text: "make" },
+    { text: "it" },
+    { text: "happen", className: "text-cyan-400 font-bold" },
+    { text: "!" },
+  ];
+
   return (
     <LampContainer className="hidden sm:flex">
       <motion.h1
@@ -17,9 +32,10 @@ export function HeroSection() {
         <h1 className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-medium text-transparent md:text-7xl tracking-tight">
           Full Stack Developer
         </h1>{" "}
-        <br />
+        {/* <br />
         Ready to elevate your tech game? Let's make it happen{" "}
-        <strong className="text-cyan-400">together</strong>! <br />{" "}
+        <b className="text-cyan-400">together</b>! <br />{" "} */}
+        <TypewriterEffectSmooth words={words} />
       </motion.h1>
     </LampContainer>
   );

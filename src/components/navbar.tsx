@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 
 export function NavBar() {
   return (
-    <div className="w-full  sm:flex hidden justify-between px-44 bg-transparent text-slate-300 h-10 align-middle p-4 fixed top-0 z-50">
+    //? Needs background Blur??
+    <div className="w-full  sm:flex hidden justify-between px-44  text-slate-300  align-middle p-2 fixed top-0 z-50 bg-slate-950 bg-opacity-50 backdrop-blur-lg h-fit">
       <h2 className="my-auto relative text-lg">
         Victor Aragão 🧑🏽‍💻{" "}
         <motion.div className="absolute -bottom-[1px] left-0 right-0 h-[1px]">

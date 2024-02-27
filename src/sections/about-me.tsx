@@ -1,10 +1,10 @@
 import { MeteorCard } from "@/components/ui/meteor-card";
-
-import reactIcon from "@/assets/react-icon.svg";
-import nodeIcon from "@/assets/nodejs-icon-logo.svg";
-import tsxIcon from "@/assets/typescript-icon.svg";
+import { useIcons } from "@/hooks/useIcons";
 
 export function AboutMe() {
+  const { reactIcon, nodeIcon, tsxIcon, htmlIcon, cssIcon, jsIcon } =
+    useIcons();
+
   const technologies: {
     id: number;
     icon: string;
@@ -40,49 +40,8 @@ export function AboutMe() {
       link: "google.com",
       icon: nodeIcon,
     },
-    // {
-    //   id: 3,
-    //   title: "HTML",
-    //   skills: [
-    //     "Mastery of semantic markup practices",
-    //     "Ability to create responsive and accessible layouts",
-    //     "Experience with HTML5 APIs like Geolocation and Canvas",
-    //     "Knowledge of SEO-friendly markup and microdata",
-    //     "Integration of HTML with modern frontend frameworks like React and Angular",
-    //   ],
-    //   link: "google.com",
-    //   icon: htmlIcon,
-    // },
-    // {
-    //   id: 4,
-    //   title: "CSS",
-    //   skills: [
-    //     "Efficient and reusable styles using CSS and preprocessors like SASS/SCSS",
-    //     "Implementation of complex and responsive designs",
-    //     "Understanding of CSS architectures like BEM and SMACSS",
-    //     "Proficiency in layout building tools like Flexbox and CSS Grid",
-    //     "Knowledge of CSS animation and transition techniques",
-    //     "Optimization of CSS performance",
-    //   ],
-    //   link: "google.com",
-    //   icon: cssIcon,
-    // },
-    // {
-    //   id: 5,
-    //   title: "JavaScript",
-    //   skills: [
-    //     "Solid experience in frontend and backend development using JavaScript",
-    //     "Knowledge of design patterns and coding best practices",
-    //     "Handling of asynchronous functions and promises",
-    //     "Proficiency with ES6+ features like arrow functions and destructuring",
-    //     "Debugging and problem-solving skills using browser developer tools",
-    //     "DOM manipulation, events, and AJAX for interactivity",
-    //   ],
-    //   link: "google.com",
-    //   icon: javascriptIcon,
-    // },
     {
-      id: 6,
+      id: 3,
       title: "TypeScript",
       skills: [
         "Typing and interfaces",
@@ -93,7 +52,45 @@ export function AboutMe() {
       link: "google.com",
       icon: tsxIcon,
     },
+    {
+      id: 4,
+      title: "HTML",
+      skills: [
+        "Semantic markup practices",
+        "HTML5 APIs like Geolocation and Canvas",
+        "Knowledge of SEO-friendly markup and microdata",
+        "Integration of HTML with modern frontend frameworks like React and Angular",
+      ],
+      link: "google.com",
+      icon: htmlIcon,
+    },
+    {
+      id: 5,
+      title: "CSS",
+      skills: [
+        "SASS/SCSS",
+        "Implementation of complex and responsive designs",
+        "Proficiency in layout building tools like Flexbox and CSS Grid",
+        "Knowledge of CSS animation and transition techniques",
+        "Optimization of CSS performance",
+      ],
+      link: "google.com",
+      icon: cssIcon,
+    },
+    {
+      id: 6,
+      title: "JavaScript",
+      skills: [
+        "Solid experience in frontend and backend development using JavaScript",
+        "Knowledge of design patterns and coding best practices",
+        "Handling of asynchronous functions and promises",
+        "Debugging and problem-solving skills",
+      ],
+      link: "google.com",
+      icon: jsIcon,
+    },
   ];
+  //TODO: adjust cards vertical spacing
 
   return (
     <div className="text-center">
@@ -106,7 +103,7 @@ export function AboutMe() {
         deliver top-notch solutions. <br />
       </p>
 
-      <div className="flex flex-wrap max-w-7xl mt-10 mx-auto">
+      <div className="flex flex-wrap max-w-7xl mt-36 mx-auto">
         {/* <HoverContainer items={technologies} /> */}
         {technologies.map((tech, index) => (
           <MeteorCard item={tech} key={index} />
