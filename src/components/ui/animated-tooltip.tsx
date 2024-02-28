@@ -16,7 +16,6 @@ export const AnimatedTooltip = ({
     name: string;
     designation: string;
     image: string;
-    size: string;
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -35,12 +34,6 @@ export const AnimatedTooltip = ({
   const handleMouseMove = (event: any) => {
     const halfWidth = event.target.offsetWidth / 2;
     x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
-  };
-
-  const sizes = {
-    sm: 25,
-    md: 50,
-    lg: 100,
   };
 
   return (
@@ -89,7 +82,7 @@ export const AnimatedTooltip = ({
             width={100}
             src={item.image}
             alt={item.name}
-            className="object-cover !m-0 p-1 object-top rounded-full h-6 w-6 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500 "
+            className="object-cover !m-0 p-1 object-top rounded-full border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500 "
           />
         </div>
       ))}

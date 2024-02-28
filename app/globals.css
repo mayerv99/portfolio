@@ -66,6 +66,14 @@
   }
 }
 
+.techs-wrapper > * {
+  @apply h-10 w-10;
+}
+
+.techs-wrapper > img {
+  @apply h-10 w-10;
+}
+
 @layer base {
   * {
     @apply border-border;

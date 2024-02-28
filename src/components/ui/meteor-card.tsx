@@ -41,7 +41,9 @@ export const MeteorCard = ({ item }: CardProps) => {
           {item.isFavorite ? (
             <h1 className="font-bold text-xl flex align-middle text-white mb-4 relative z-50 gap-5 leading-6">
               {item.title}
-              {item.isFavorite && <AnimatedTooltip items={tooltip} />}
+              <div className="h-2 w-2">
+                {item.isFavorite && <AnimatedTooltip items={tooltip} />}
+              </div>
             </h1>
           ) : (
             <h1 className="font-bold text-xl text-white mb-4 relative z-50">

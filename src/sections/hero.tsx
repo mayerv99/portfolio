@@ -29,12 +29,9 @@ export function HeroSection() {
         }}
         className=" bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium tracking-larger text-transparent md:text-4xl"
       >
-        <h1 className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-medium text-transparent md:text-7xl tracking-tight">
+        <strong className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-medium text-transparent md:text-7xl tracking-tight">
           Full Stack Developer
-        </h1>{" "}
-        {/* <br />
-        Ready to elevate your tech game? Let's make it happen{" "}
-        <b className="text-cyan-400">together</b>! <br />{" "} */}
+        </strong>
         <TypewriterEffectSmooth words={words} />
       </motion.h1>
     </LampContainer>

@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import { AnimatedTooltip } from "./animated-tooltip";
 
 export const HoverContainer = ({
   items,
@@ -10,7 +11,14 @@ export const HoverContainer = ({
     id: number;
     link: string;
     title: string;
+    subtitle: string;
     description: string;
+    technologies: {
+      id: number;
+      name: string;
+      designation: string;
+      image: string;
+    }[];
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -20,7 +28,7 @@ export const HoverContainer = ({
       {items.map((item, idx) => (
         <div
           key={idx}
-          className="relative group block p-2 h-full w-1/3 "
+          className="relative group block p-2 min-h-56 max-h-fit w-1/2  "
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -41,18 +49,29 @@ export const HoverContainer = ({
               />
             )}
           </AnimatePresence>
-          <div className=" rounded-2xl h-full w-full p-4 overflow-hidden bg-gradient-to-br from-slate-800 to-slate-800/[0.2] border border-transparent group-hover:border-slate-700 relative z-50">
+          {/* The card itselfs */}
+
+          <div className="rounded-2xl h-full w-full p-4 overflow-hidden bg-gradient-to-br from-slate-800 to-slate-800/[0.2] border border-transparent group-hover:border-slate-700 relative z-50">
             <div className="relative z-50">
               <div className="p-4">
                 <h4 className="text-zinc-100 font-bold tracking-wide mt-4">
                   {item.title}
                 </h4>
-                <p className="mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm">
+                <h5>{item.subtitle}</h5>
+
+                <p className="mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm ">
                   {item.description}
                 </p>
+                <div className="flex gap-10 mt-8 w-fit max-w-full mx-auto justify-center align-center techs-wrapper">
+                  {item.technologies && (
+                    <AnimatedTooltip items={item.technologies} />
+                  )}
+                </div>
               </div>
             </div>
           </div>
+
+          {/* End of card */}
         </div>
       ))}
     </>
