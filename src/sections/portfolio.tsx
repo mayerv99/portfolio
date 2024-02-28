@@ -1,4 +1,5 @@
 import { HoverContainer } from "@/components/ui/hover-effect";
+import { SectionHeader } from "@/components/ui/section-header";
 
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { useIcons } from "@/hooks/useIcons";
@@ -17,6 +18,7 @@ export function Portfolio() {
     sqliteIcon,
     oauthIcon,
     expoIcon,
+    tailwindIcon,
   } = useIcons();
 
   const items: {
@@ -195,24 +197,37 @@ export function Portfolio() {
             },
           ],
         },
+        {
+          id: 2,
+          link: "https://github.com/mayerv99/portfolio",
+          title: "This website - Current",
+          subtitle: "Frontend Developer",
+          description: `This project could not be left out. It was developed using ReactJS, TailwindCSS, AceTernityUI, ShadcnUI, and Framer-motion.
+          The focus was on creating a modern and visually appealing application. Although the project is not yet responsive, efforts are underway to enhance its adaptability across different devices.
+          This endeavor has been a valuable learning experience in leveraging these technologies to build sophisticated user interfaces.`,
+
+          technologies: [
+            { id: 1, name: "React", designation: "frontend", image: reactIcon },
+            {
+              id: 2,
+              name: "TailwindCSS",
+              designation: "styling",
+              image: tailwindIcon,
+            },
+          ],
+        },
       ],
     },
   ];
 
   return (
     <>
-      <h1 className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium tracking-larger text-transparent md:text-4xl mb-10">
-        My portfolio
-      </h1>
-      <TracingBeam>
+      <SectionHeader>My portfolio</SectionHeader>
+      <TracingBeam className="mb-56">
         {items.map((item, index) => (
           <div key={index}>
             <h2 className="text-2xl font-semibold my-8">{item.year}</h2>
-            <div
-              className={`flex flex-wrap${
-                item.experiences.length > 1 ? "justify-around" : "justify-start"
-              }`}
-            >
+            <div className={`flex flex-wrap justify-start`}>
               <HoverContainer items={item.experiences} />
             </div>
           </div>

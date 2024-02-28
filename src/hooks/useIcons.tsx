@@ -10,6 +10,7 @@ import dockerIcon from "@/assets/docker-icon.svg";
 import sqliteIcon from "@/assets/sqlite-icon.svg";
 import oauthIcon from "@/assets/oauth-icon.svg";
 import expoIcon from "@/assets/expo-icon.svg";
+import tailwindIcon from "@/assets/tailwindcss-icon.svg";
 
 export function useIcons() {
   return {
@@ -25,5 +26,6 @@ export function useIcons() {
     sqliteIcon,
     oauthIcon,
     expoIcon,
+    tailwindIcon,
   };
 }

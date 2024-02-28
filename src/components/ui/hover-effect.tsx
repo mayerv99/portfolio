@@ -30,7 +30,7 @@ export const HoverContainer = ({
       {items.map((item, idx) => (
         <div
           key={idx}
-          className="relative group block p-2 min-h-56 max-h-fit w-1/2  "
+          className="relative group block p-2 min-h-56 max-h-fit w-1/2 z-40"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
