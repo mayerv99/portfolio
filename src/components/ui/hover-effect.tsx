@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import { AnimatedTooltip } from "./animated-tooltip";
 
+import { ArrowCircleUpRight } from "@phosphor-icons/react";
+
 export const HoverContainer = ({
   items,
 }: {
@@ -54,9 +56,19 @@ export const HoverContainer = ({
           <div className="rounded-2xl h-full w-full p-4 overflow-hidden bg-gradient-to-br from-slate-800 to-slate-800/[0.2] border border-transparent group-hover:border-slate-700 relative z-50">
             <div className="relative z-50">
               <div className="p-4">
-                <h4 className="text-zinc-100 font-bold tracking-wide mt-4">
-                  {item.title}
-                </h4>
+                <div className="flex justify-between w-full align-bottom">
+                  <h4 className="text-zinc-100 font-bold tracking-wide mt-4">
+                    {item.title}
+                  </h4>
+                  {item.link && (
+                    <div className="mt-auto cursor-pointer">
+                      <ArrowCircleUpRight
+                        size={24}
+                        onClick={() => window.open(item.link)}
+                      />
+                    </div>
+                  )}
+                </div>
                 <h5>{item.subtitle}</h5>
 
                 <p className="mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm ">

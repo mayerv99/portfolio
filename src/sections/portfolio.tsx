@@ -43,7 +43,7 @@ export function Portfolio() {
       experiences: [
         {
           id: 1,
-          link: "www.google.com",
+          link: "https://br.fiverr.com/",
           title: "Fiverr - 2023",
           subtitle: "Freelance fullstack",
           description: `Began my freelancing journey on Fiverr, initially focusing on creating visually appealing and responsive websites using HTML and CSS. 
@@ -122,7 +122,7 @@ export function Portfolio() {
         },
         {
           id: 2,
-          link: "",
+          link: "https://github.com/mayerv99/songcard",
           title: "SongCard Project - 2022",
           subtitle: "Fullstack Engineer",
           description: `I developed the SongCard project as my graduation thesis. 
@@ -185,7 +185,6 @@ export function Portfolio() {
           subtitle: "Fullstack Engineer",
           description: `Since 2023, I have been working as a freelancer, taking on projects ranging from simple landing pages to large-scale systems. This phase of my career has allowed me to further diversify my skill set, working with a variety of technologies and clients. I've been able to apply my expertise in frontend and backend development to deliver tailored solutions that meet the unique needs of each project, ensuring high-quality, scalable, and efficient outcomes.`,
           technologies: [
-            // Example technologies used in freelance projects
             { id: 1, name: "React", designation: "frontend", image: reactIcon },
             { id: 2, name: "Node.js", designation: "backend", image: nodeIcon },
             {
@@ -194,7 +193,6 @@ export function Portfolio() {
               designation: "frontend",
               image: tsxIcon,
             },
-            // Add more technologies as needed
           ],
         },
       ],
