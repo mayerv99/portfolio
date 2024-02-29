@@ -5,10 +5,10 @@ import { Spotlight } from "@/components/ui/spotlight";
 
 export function Contact() {
   return (
-    <div className="text-center w-1/2 mx-auto">
+    <div className="text-center w-1/2 mx-auto" id="contact">
       <Spotlight fill="#22D3EE" />
 
-      <SectionHeader>Let's Connect</SectionHeader>
+      <SectionHeader>Contact me</SectionHeader>
 
       <p className="text-xl leading-8 w-full mx-auto">
         Whether you have a groundbreaking idea or need a partner for your next

@@ -82,3 +82,20 @@
     @apply bg-background text-foreground text-slate-300 bg-slate-950;
   }
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, #6b46c1, #00bcd4);
+  border-radius: 8px;
+  margin-right: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, #553c9a, #019392);
+}

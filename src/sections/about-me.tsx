@@ -3,7 +3,7 @@ import { Skills } from "./skills";
 
 export function AboutMe() {
   return (
-    <div className="text-center">
+    <div className="text-center" id="about-me">
       <SectionHeader>Hi, I’m Victor Aragão</SectionHeader>
 
       <p className="text-xl leading-8 w-1/2 mx-auto">

@@ -221,7 +221,7 @@ export function Portfolio() {
   ];
 
   return (
-    <>
+    <div id="portfolio">
       <SectionHeader>My portfolio</SectionHeader>
       <TracingBeam className="mb-56">
         {items.map((item, index) => (
@@ -233,6 +233,6 @@ export function Portfolio() {
           </div>
         ))}
       </TracingBeam>
-    </>
+    </div>
   );
 }
