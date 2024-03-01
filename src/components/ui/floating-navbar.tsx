@@ -6,7 +6,6 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "@/utils/cn";
-import { ContactFormDialog } from "../contact-form-dialog";
 
 export const FloatingNav = ({
   navItems,
@@ -83,16 +82,15 @@ export const FloatingNav = ({
             )
           )}
         </div>
-        <ContactFormDialog>
-          <button
-            onClick={() => {
-              // Function to open modal
-            }}
-            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-          >
-            Contact me
-          </button>
-        </ContactFormDialog>
+        <button
+          onClick={() =>
+            (window.location.href =
+              "mailto:mayerv99@gmail.com?subject=I%20would%20like%20to%20get%20in%20touch%20about%20a%20project")
+          }
+          className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+        >
+          Contact me
+        </button>
       </motion.div>
     </AnimatePresence>
   );
