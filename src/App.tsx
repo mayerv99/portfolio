@@ -1,4 +1,3 @@
-import CustomScrollbar from "./components/scrollbar";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import { AboutMe } from "./sections/about-me";
 import { Contact } from "./sections/contact";

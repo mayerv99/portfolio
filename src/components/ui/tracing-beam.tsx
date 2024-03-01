@@ -1,11 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import {
-  motion,
-  useTransform,
-  useScroll,
-  useVelocity,
-  useSpring,
-} from "framer-motion";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
 import { cn } from "@/utils/cn";
 
 export const TracingBeam = ({
@@ -22,8 +16,6 @@ export const TracingBeam = ({
   });
 
   // track velocity of scroll to increase or decrease distance between svg gradient y coordinates.
-  const scrollYProgressVelocity = useVelocity(scrollYProgress);
-  const [velo, setVelocity] = React.useState(0);
 
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -33,11 +25,6 @@ export const TracingBeam = ({
     if (contentRef.current) {
       setSvgHeight(contentRef.current.offsetHeight);
     }
-  }, []);
-  useEffect(() => {
-    return scrollYProgressVelocity.onChange((latestVelocity) => {
-      setVelocity(latestVelocity);
-    });
   }, []);
 
   const y1 = useSpring(
