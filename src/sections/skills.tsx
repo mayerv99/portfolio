@@ -92,7 +92,7 @@ export function Skills() {
     },
   ];
   return (
-    <div className="flex flex-wrap max-w-7xl mt-36 mx-auto">
+    <div className="flex flex-wrap gap-10 md:gap-0 max-w-7xl mt-36 mx-auto">
       {technologies.map((tech, index) => (
         <MeteorCard item={tech} key={index} />
       ))}

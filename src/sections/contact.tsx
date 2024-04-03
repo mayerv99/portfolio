@@ -5,7 +5,7 @@ import { Spotlight } from "@/components/ui/spotlight";
 
 export function Contact() {
   return (
-    <div className="text-center w-1/2 mx-auto" id="contact">
+    <div className="text-center  w-3/4 md:w-1/2 mx-auto" id="contact">
       <Spotlight fill="#22D3EE" />
 
       <SectionHeader>Contact me</SectionHeader>

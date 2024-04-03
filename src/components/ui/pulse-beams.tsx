@@ -2,29 +2,43 @@ import { motion } from "framer-motion";
 
 export const PulseBeamsSecond = () => {
   return (
-    <div className="flex h-[40rem] relative items-center justify-center antialiased bg-slate-950 overflow-hidden">
-      <div className="relative">
+    <>
+      <div className="hidden md:flex h-[40rem] relative items-center justify-center antialiased bg-slate-950 overflow-hidden">
+        <div className="relative">
+          <button
+            onClick={() =>
+              (window.location.href =
+                "mailto:mayerv99@gmail.com?subject=I%20would%20like%20to%20get%20in%20touch%20about%20a%20project")
+            }
+            className="bg-slate-800 w-[320px] z-40 h-[120px] no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block"
+          >
+            <span className="absolute inset-0 overflow-hidden rounded-full">
+              <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+            </span>
+            <div className="relative flex justify-center w-[320px] text-center space-x-2 h-[120px]  items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
+              <span className="md:text-4xl text-base inline-block bg-clip-text text-transparent bg-gradient-to-r from-neutral-300 via-neutral-600 to-neutral-300">
+                Connect
+              </span>
+            </div>
+          </button>
+        </div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <SVGs />
+        </div>
+      </div>
+      {/* mobile button */}
+      <div className="flex md:hidden align-center justify-center mt-10">
         <button
           onClick={() =>
             (window.location.href =
               "mailto:mayerv99@gmail.com?subject=I%20would%20like%20to%20get%20in%20touch%20about%20a%20project")
           }
-          className="bg-slate-800 w-[320px] z-40 h-[120px] no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block"
+          className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
         >
-          <span className="absolute inset-0 overflow-hidden rounded-full">
-            <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-          </span>
-          <div className="relative flex justify-center w-[320px] text-center space-x-2 h-[120px]  items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
-            <span className="md:text-4xl text-base inline-block bg-clip-text text-transparent bg-gradient-to-r from-neutral-300 via-neutral-600 to-neutral-300">
-              Connect
-            </span>
-          </div>
+          Contact me
         </button>
       </div>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <SVGs />
-      </div>
-    </div>
+    </>
   );
 };
 
