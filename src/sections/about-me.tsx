@@ -6,7 +6,7 @@ export function AboutMe() {
     <div className="text-center" id="about-me">
       <SectionHeader>Hi, I’m Victor Aragão</SectionHeader>
 
-      <p className="text-xl leading-8 w-1/2 mx-auto">
+      <p className="text-xl leading-8 w-3/4 md:w-1/2 mx-auto">
         As a <strong>software developer</strong> specializing in{" "}
         <strong>React.js and Node.js</strong>, I've spent the last six years as
         a freelance developer, collaborating with various clients and companies.

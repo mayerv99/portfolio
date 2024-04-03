@@ -7,8 +7,8 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 
-import { Input } from "@/components/ui/input"; // Importando o componente Input
-import { Textarea } from "@/components/ui/textarea"; // Importando o componente Textarea
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { SelectField } from "./custom-select";
 
 import { useState } from "react";
