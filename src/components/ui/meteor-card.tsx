@@ -20,8 +20,8 @@ export const MeteorCard = ({ item }: CardProps) => {
   const tooltip = [
     {
       id: 1,
-      name: "Favorite",
-      designation: "Highest Proficiency",
+      name: "Favorito",
+      designation: "Maior Proficiência",
       image: starIcon,
       size: "md",
     },

@@ -19,6 +19,8 @@ export function Portfolio() {
     oauthIcon,
     expoIcon,
     tailwindIcon,
+    bigQueryIcon,
+    awsIcon,
   } = useIcons();
 
   const items: {
@@ -40,59 +42,110 @@ export function Portfolio() {
     }[];
   }[] = [
     {
-      id: 1,
-      year: 2016,
+      id: 6,
+      year: 2024,
       experiences: [
         {
           id: 1,
-          link: "https://br.fiverr.com/",
-          title: "Fiverr - 2023",
-          subtitle: "Freelance fullstack",
-          description: `Began my freelancing journey on Fiverr, initially focusing on creating visually appealing and responsive websites using HTML and CSS. 
-          As I gained more experience and confidence, I transitioned to more complex and dynamic projects, leveraging React for the frontend to build interactive user interfaces and Node.js 
-          for the backend to develop scalable and efficient servers. This journey not only honed my technical skills but also enhanced my ability to understand client needs, manage projects, 
-          and deliver solutions that drive user engagement and satisfaction.`,
+          link: "",
+          title: "Instituto Cerrados - Atual",
+          subtitle: "Engenheiro Fullstack",
+          description: `Como Engenheiro Fullstack no Instituto Cerrados, lidero o desenvolvimento de aplicativos e sistemas, supervisionando consultores e garantindo qualidade e performance.
+
+Na área de DevOps, gerencio infraestrutura na AWS, automatizo processos e implemento pipelines de CI/CD, otimizando a eficiência operacional.
+
+No frontend, desenvolvo com ReactJS, NextJS e TypeScript, focando em soluções escaláveis.
+
+Também gerencio um data lake, processando grandes volumes de informações, realizando análises geoespaciais e integrando múltiplas fontes de dados para gerar insights estratégicos através de dashboards e visualizações interativas.`,
           technologies: [
-            { id: 1, name: "HTML", designation: "frontend", image: htmlIcon },
-            { id: 2, name: "CSS", designation: "frontend", image: cssIcon },
-            { id: 3, name: "React", designation: "frontend", image: reactIcon },
-            { id: 4, name: "Node.js", designation: "backend", image: nodeIcon },
             {
-              id: 5,
+              id: 1,
+              name: "PostgreSQL",
+              designation: "database",
+              image: postgresIcon,
+            },
+            { id: 2, name: "React", designation: "frontend", image: reactIcon },
+            {
+              id: 3,
+              name: "BigQuery",
+              designation: "database",
+              image: bigQueryIcon,
+            },
+            {
+              id: 4,
               name: "TypeScript",
               designation: "frontend",
               image: tsxIcon,
             },
             {
-              id: 6,
-              name: "JavaScript",
-              designation: "frontend",
-              image: jsIcon,
+              id: 5,
+              name: "TailwindCSS",
+              designation: "styling",
+              image: tailwindIcon,
             },
           ],
         },
       ],
     },
-
     {
-      id: 3,
-      year: 2020,
+      id: 5,
+      year: 2023,
       experiences: [
         {
           id: 1,
-          link: "https://www.workalove.com",
-          title: "Workalove EDTECH - 2023",
-          subtitle: "Frontend Developer",
-          description: `In 2020, I joined Workalove EDTECH as a Frontend Developer, focusing on ReactJS. This role significantly enhanced my team collaboration and interpersonal skills. I contributed to various educational technology projects, emphasizing creating engaging and accessible user interfaces. My journey at Workalove EDTECH, which lasted until 2023, was instrumental in refining my frontend development expertise and understanding the nuances of working within an agile team environment.`,
+          link: "",
+          title: "SISCOD v2 - 2023",
+          subtitle: "Engenheiro Fullstack",
+          description: `Em 2023, desenvolvi uma extensão do projeto SISCOD,
+          focando no registro de dados para inspeções de empresas. Esta iteração foi construída usando React para o frontend,
+          Node.js para o backend e SQLite para o banco de dados.
+          O projeto visava otimizar o processo de coleta e análise de dados, fornecendo uma interface mais eficiente e
+          amigável para monitoramento e relatórios.`,
+          technologies: [
+            { id: 1, name: "React", designation: "frontend", image: reactIcon },
+            { id: 2, name: "Node.js", designation: "backend", image: nodeIcon },
+            {
+              id: 3,
+              name: "SQLite",
+              designation: "database",
+              image: sqliteIcon,
+            },
+          ],
+        },
+        {
+          id: 1,
+          link: "",
+          title: "Projetos Freelance - Atual",
+          subtitle: "Engenheiro Fullstack",
+          description: `Desde 2023, tenho trabalhado como freelancer, assumindo projetos que variam desde landing pages simples até sistemas de grande escala. Esta fase da minha carreira me permitiu diversificar ainda mais minhas habilidades, trabalhando com uma variedade de tecnologias e clientes. Tenho aplicado minha expertise em desenvolvimento frontend e backend para entregar soluções personalizadas que atendem às necessidades específicas de cada projeto, garantindo resultados de alta qualidade, escaláveis e eficientes.`,
+          technologies: [
+            { id: 1, name: "React", designation: "frontend", image: reactIcon },
+            { id: 2, name: "Node.js", designation: "backend", image: nodeIcon },
+            {
+              id: 3,
+              name: "TypeScript",
+              designation: "frontend",
+              image: tsxIcon,
+            },
+          ],
+        },
+        {
+          id: 2,
+          link: "https://github.com/mayerv99/portfolio",
+          title: "Este website",
+          subtitle: "Desenvolvedor Frontend",
+          description: `Este projeto não poderia ficar de fora. Foi desenvolvido usando ReactJS, TailwindCSS, AceTernityUI, ShadcnUI e Framer-motion.
+          O foco foi criar uma aplicação moderna e visualmente atraente. Embora o projeto ainda não seja responsivo, estão em andamento esforços para melhorar sua adaptabilidade em diferentes dispositivos.
+          Esta iniciativa tem sido uma valiosa experiência de aprendizado em aproveitar essas tecnologias para construir interfaces de usuário sofisticadas.`,
+
           technologies: [
             { id: 1, name: "React", designation: "frontend", image: reactIcon },
             {
               id: 2,
-              name: "JavaScript",
-              designation: "frontend",
-              image: jsIcon,
+              name: "TailwindCSS",
+              designation: "styling",
+              image: tailwindIcon,
             },
-            { id: 3, name: "CSS", designation: "frontend", image: cssIcon },
           ],
         },
       ],
@@ -104,20 +157,25 @@ export function Portfolio() {
         {
           id: 1,
           link: "",
-          title: "SISCOD Project - 2022",
-          subtitle: "Fullstack Engineer",
-          description: `Was a robust software solution designed to streamline the monitoring and management of water
-          usage from rivers to private companies with government contracts. Developed using a cutting-edge tech stack
-          comprising ReactJS for the frontend, Java for the backend, PostgreSQL for database management, and Docker for containerization,
-          this system is tailored for use by monitoring teams to register users and enterprises efficiently.`,
+          title: "Projeto SISCOD - 2022",
+          subtitle: "Engenheiro Fullstack",
+          description: `Foi uma solução de software robusta projetada para otimizar o monitoramento e gerenciamento do uso de água
+          de rios para empresas privadas com contratos governamentais. Desenvolvido usando uma stack tecnológica de ponta
+          compreendendo ReactJS para o frontend, Java para o backend, PostgreSQL para gerenciamento de banco de dados e Docker para containerização,
+          este sistema foi adaptado para uso por equipes de monitoramento para registrar usuários e empresas de forma eficiente.`,
           technologies: [
-            { id: 1, name: "React", designation: "frontend", image: reactIcon },
-            { id: 2, name: "Java", designation: "backend", image: javaIcon },
             {
-              id: 3,
+              id: 1,
               name: "PostgreSQL",
               designation: "database",
               image: postgresIcon,
+            },
+            { id: 2, name: "React", designation: "frontend", image: reactIcon },
+            {
+              id: 3,
+              name: "BigQuery",
+              designation: "database",
+              image: bigQueryIcon,
             },
             { id: 4, name: "Docker", designation: "devops", image: dockerIcon },
           ],
@@ -125,13 +183,13 @@ export function Portfolio() {
         {
           id: 2,
           link: "https://github.com/mayerv99/songcard",
-          title: "SongCard Project - 2022",
-          subtitle: "Fullstack Engineer",
-          description: `I developed the SongCard project as my graduation thesis. 
-          SongCard is a mobile app created using React Native and integrated with the Musixmatch API. 
-          It also features authentication via OAuth. The app is designed to teach languages through music,
-           leveraging the universal appeal of songs to make learning more engaging and effective. This project allowed me to explore the potential
-            of mobile applications in educational technology and deepen my understanding of integrating third-party services and authentication mechanisms.`,
+          title: "Projeto SongCard - 2022",
+          subtitle: "Engenheiro Fullstack",
+          description: `Desenvolvi o projeto SongCard como minha tese de graduação.
+          SongCard é um aplicativo móvel criado usando React Native e integrado com a API Musixmatch.
+          Ele também possui autenticação via OAuth. O aplicativo foi projetado para ensinar idiomas através da música,
+          aproveitando o apelo universal das canções para tornar o aprendizado mais envolvente e eficaz. Este projeto me permitiu explorar o potencial
+          de aplicações móveis em tecnologia educacional e aprofundar meu entendimento da integração de serviços de terceiros e mecanismos de autenticação.`,
           technologies: [
             {
               id: 1,
@@ -156,63 +214,59 @@ export function Portfolio() {
       ],
     },
     {
-      id: 5,
-      year: 2023,
+      id: 3,
+      year: 2020,
       experiences: [
         {
           id: 1,
-          link: "",
-          title: "SISCOD Version 2 - 2023",
-          subtitle: "Fullstack Engineer",
-          description: `In 2023, I developed an extension of the SISCOD project, 
-          focusing on data registration for company inspections. This iteration was built using React for the frontend, 
-          Node.js for the backend, and SQLite for the database. 
-          The project aimed at streamlining the data collection and analysis process, providing a more efficient and 
-          user-friendly interface for monitoring and reporting.`,
+          link: "https://www.workalove.com",
+          title: "Workalove EDTECH - 2023",
+          subtitle: "Desenvolvedor Frontend",
+          description: `Em 2020, ingressei na Workalove EDTECH como Desenvolvedor Frontend, focando em ReactJS. Este cargo aprimorou significativamente minhas habilidades de colaboração em equipe e interpessoais. Contribuí para vários projetos de tecnologia educacional, enfatizando a criação de interfaces de usuário envolventes e acessíveis. Minha jornada na Workalove EDTECH, que durou até 2023, foi fundamental para refinar minha expertise em desenvolvimento frontend e compreender as nuances do trabalho em um ambiente ágil.`,
           technologies: [
-            { id: 1, name: "React", designation: "frontend", image: reactIcon },
-            { id: 2, name: "Node.js", designation: "backend", image: nodeIcon },
+            {
+              id: 1,
+              name: "PostgreSQL",
+              designation: "database",
+              image: postgresIcon,
+            },
+            { id: 2, name: "React", designation: "frontend", image: reactIcon },
             {
               id: 3,
-              name: "SQLite",
+              name: "BigQuery",
               designation: "database",
-              image: sqliteIcon,
+              image: bigQueryIcon,
             },
           ],
         },
+      ],
+    },
+    {
+      id: 1,
+      year: 2016,
+      experiences: [
         {
           id: 1,
-          link: "",
-          title: "Freelance Projects - Current",
-          subtitle: "Fullstack Engineer",
-          description: `Since 2023, I have been working as a freelancer, taking on projects ranging from simple landing pages to large-scale systems. This phase of my career has allowed me to further diversify my skill set, working with a variety of technologies and clients. I've been able to apply my expertise in frontend and backend development to deliver tailored solutions that meet the unique needs of each project, ensuring high-quality, scalable, and efficient outcomes.`,
+          link: "https://br.fiverr.com/",
+          title: "Fiverr - Atual",
+          subtitle: "Freelance fullstack",
+          description: `Atuei por anos como desenvolvedor fullstack freelancer, trabalhando em uma ampla variedade de projetos, desde a criação de landing pages até o desenvolvimento de sistemas completos. Durante esse período, tive forte atuação tanto no frontend, criando interfaces dinâmicas e responsivas, quanto na manipulação de dados e no uso do BigQuery. Trabalhei na otimização de grandes bases de dados e também na criação de dashboards personalizados, alinhados às necessidades dos clientes. Essa experiência me permitiu aprimorar minhas habilidades em todas as etapas do desenvolvimento de software, enfrentando desafios diversos e entregando soluções eficientes para diferentes segmentos.`,
           technologies: [
-            { id: 1, name: "React", designation: "frontend", image: reactIcon },
-            { id: 2, name: "Node.js", designation: "backend", image: nodeIcon },
+            { id: 1, name: "HTML", designation: "frontend", image: htmlIcon },
+            { id: 2, name: "CSS", designation: "frontend", image: cssIcon },
+            { id: 3, name: "React", designation: "frontend", image: reactIcon },
+            { id: 4, name: "Node.js", designation: "backend", image: nodeIcon },
             {
-              id: 3,
+              id: 5,
               name: "TypeScript",
               designation: "frontend",
               image: tsxIcon,
             },
-          ],
-        },
-        {
-          id: 2,
-          link: "https://github.com/mayerv99/portfolio",
-          title: "This website - Current",
-          subtitle: "Frontend Developer",
-          description: `This project could not be left out. It was developed using ReactJS, TailwindCSS, AceTernityUI, ShadcnUI, and Framer-motion.
-          The focus was on creating a modern and visually appealing application. Although the project is not yet responsive, efforts are underway to enhance its adaptability across different devices.
-          This endeavor has been a valuable learning experience in leveraging these technologies to build sophisticated user interfaces.`,
-
-          technologies: [
-            { id: 1, name: "React", designation: "frontend", image: reactIcon },
             {
-              id: 2,
-              name: "TailwindCSS",
-              designation: "styling",
-              image: tailwindIcon,
+              id: 6,
+              name: "JavaScript",
+              designation: "frontend",
+              image: jsIcon,
             },
           ],
         },

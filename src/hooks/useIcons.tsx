@@ -11,6 +11,9 @@ import sqliteIcon from "@/assets/sqlite-icon.svg";
 import oauthIcon from "@/assets/oauth-icon.svg";
 import expoIcon from "@/assets/expo-icon.svg";
 import tailwindIcon from "@/assets/tailwindcss-icon.svg";
+import awsIcon from "@/assets/aws-white.png";
+import bigQueryIcon from "@/assets/bigquery.svg";
+import dataLakeIcon from "@/assets/datalake.png";
 
 export function useIcons() {
   return {
@@ -27,5 +30,8 @@ export function useIcons() {
     oauthIcon,
     expoIcon,
     tailwindIcon,
+    awsIcon,
+    bigQueryIcon,
+    dataLakeIcon,
   };
 }

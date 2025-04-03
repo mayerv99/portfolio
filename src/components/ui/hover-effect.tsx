@@ -74,7 +74,7 @@ export const HoverContainer = ({
                 <p className="mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm ">
                   {item.description}
                 </p>
-                <div className="flex gap-10 mt-8 w-fit max-w-full mx-auto justify-center align-center techs-wrapper">
+                <div className="flex gap-10 mt-[2rem] min-[2rem] w-fit max-w-full mx-auto justify-center align-center techs-wrapper">
                   {item.technologies && (
                     <AnimatedTooltip items={item.technologies} />
                   )}

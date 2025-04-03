@@ -4,20 +4,20 @@ import { Skills } from "./skills";
 export function AboutMe() {
   return (
     <div className="text-center" id="about-me">
-      <SectionHeader>Hi, I’m Victor Aragão</SectionHeader>
+      <SectionHeader>Olá, eu sou Victor Aragão</SectionHeader>
 
       <p className="text-xl leading-8 w-3/4 md:w-1/2 mx-auto">
-        As a <strong>software developer</strong> specializing in{" "}
-        <strong>React.js and Node.js</strong>, I've spent the last six years as
-        a freelance developer, collaborating with various clients and companies.
-        Driven by my passion for technology, I tackle challenges head-on,
-        consistently delivering top-tier solutions. My dedication to staying
-        current with industry trends ensures I bring innovative and high-quality
-        work to every project. I can bring a blend of{" "}
+        Como <strong>desenvolvedor de software</strong> especializado em{" "}
+        <strong>React.js e Node.js</strong>, passei os últimos seis anos como
+        desenvolvedor freelancer, colaborando com diversos clientes e empresas.
+        Movido pela minha paixão por tecnologia, enfrento desafios de frente,
+        entregando consistentemente soluções de alto nível. Minha dedicação em
+        me manter atualizado com as tendências do setor garante que trago
+        inovação e qualidade para cada projeto. Posso oferecer uma combinação de{" "}
         <strong>
-          technical expertise, creativity, and a commitment to excellence
+          expertise técnica, criatividade e compromisso com a excelência
         </strong>{" "}
-        to every endeavor.
+        em cada empreendimento.
       </p>
       <Skills />
     </div>

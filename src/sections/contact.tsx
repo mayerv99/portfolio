@@ -8,13 +8,14 @@ export function Contact() {
     <div className="text-center  w-3/4 md:w-1/2 mx-auto" id="contact">
       <Spotlight fill="#22D3EE" />
 
-      <SectionHeader>Contact me</SectionHeader>
+      <SectionHeader>Entre em contato</SectionHeader>
 
       <p className="text-xl leading-8 w-full mx-auto">
-        Whether you have a groundbreaking idea or need a partner for your next
-        project, I'm here to help bring your vision to life. <br />
-        Reach out to discuss how we can collaborate and create something amazing
-        together.
+        Seja para uma ideia inovadora ou para encontrar um parceiro para seu
+        próximo projeto, estou aqui para ajudar a tornar sua visão realidade.{" "}
+        <br />
+        Entre em contato para discutirmos como podemos colaborar e criar algo
+        incrível juntos.
       </p>
 
       <PulseBeamsSecond />

@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 
 export function HeroSection() {
   const words = [
-    { text: "Ready" },
-    { text: "to" },
-    { text: "elevate" },
-    { text: "your" },
-    { text: "tech" },
-    { text: "game?" },
-    { text: "Let's" },
-    { text: "make" },
-    { text: "it" },
-    { text: "happen", className: "text-cyan-400 font-bold" },
+    { text: "Pronto" },
+    { text: "para" },
+    { text: "elevar" },
+    { text: "seu" },
+    { text: "nível" },
+    { text: "tecnológico?" },
+    { text: "Vamos" },
+    { text: "fazer" },
+    { text: "isso" },
+    { text: "acontecer", className: "text-cyan-400 font-bold" },
     { text: "!" },
   ];
 
@@ -31,7 +31,7 @@ export function HeroSection() {
           className=" bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium tracking-larger text-transparent md:text-4xl"
         >
           <strong className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-medium text-transparent md:text-7xl tracking-tight">
-            Full Stack Developer
+            Desenvolvedor Full Stack
           </strong>
           <TypewriterEffectSmooth words={words} />
         </motion.h1>
